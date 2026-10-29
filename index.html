@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Printline — Privacy Policy | سياسة الخصوصية</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Cairo', system-ui, -apple-system, sans-serif;
+            background-color: #F8FAFC;
+            color: #0F172A;
+        }
+        [dir="rtl"] body, [dir="rtl"] .lang-ar {
+            font-family: 'Cairo', 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        .brand-gradient {
+            background: linear-gradient(135deg, #1E3A8A 0%, #1D4ED8 60%, #0284C7 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- Top Navigation Bar -->
+    <header class="brand-gradient text-white shadow-md sticky top-0 z-30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-3" dir="ltr">
+                <div class="w-10 h-10 rounded-xl bg-slate-900/40 border border-sky-400/60 flex items-center justify-center shadow-inner">
+                    <svg class="w-6 h-6 text-sky-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6v-8z" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="text-lg sm:text-xl font-bold tracking-tight leading-none">
+                        <span>Print</span><span class="text-sky-300">line</span>
+                    </div>
+                    <p id="headerSubtitle" class="text-xs text-blue-100 mt-0.5">Official Privacy Policy • OmarTeam</p>
+                </div>
+            </div>
+
+            <!-- Language Switcher -->
+            <div class="flex items-center bg-slate-900/30 p-1 rounded-xl border border-white/15" dir="ltr">
+                <button id="btnLangEn" type="button" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-white text-blue-900 shadow-sm">
+                    English
+                </button>
+                <button id="btnLangAr" type="button" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-blue-100 hover:text-white">
+                    العربية
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 py-8">
+
+        <!-- ==================== ENGLISH VERSION ==================== -->
+        <article id="contentEn" class="space-y-6" dir="ltr">
+            <!-- Hero Summary Card -->
+            <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold mb-3 border border-blue-200">
+                    <span>🔒 Google Play Compliant Policy</span>
+                    <span>•</span>
+                    <span>Package: com.omarteam.printline</span>
+                </div>
+                <h1 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+                    Privacy Policy for Printline
+                </h1>
+                <p class="text-sm text-slate-500 mt-1">
+                    <strong>Effective Date:</strong> October 29, 2026 &nbsp;|&nbsp; <strong>Developer:</strong> OmarTeam
+                </p>
+                <p class="mt-4 text-slate-700 leading-relaxed text-sm sm:text-base">
+                    <strong>Printline</strong> ("we", "our", or "the App") is a direct local printing utility developed by <strong>OmarTeam</strong> for Android devices. We respect your privacy and designed Printline so that <strong>all document rendering, photo rasterization, and print streaming happen 100% locally on your device and local network</strong> without uploading your files to any external cloud server.
+                </p>
+            </div>
+
+            <!-- Section 1: Documents & Local Printing -->
+            <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center text-sm">1</span>
+                    <span>Documents, Photos &amp; Local Print Processing</span>
+                </h2>
+                <p class="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+                    When you select a photo, PDF document, or raw <code>.prn</code> file in Printline—or print from another app using the <strong>Printline Android System Print Service</strong>—your files are processed strictly in your device's local memory and temporary cache (<code>cacheDir</code>) to convert them into printer-ready raster streams.
+                </p>
+                <ul class="mt-3 space-y-2 text-sm text-slate-600 list-disc pl-5">
+                    <li><strong>Zero Cloud Uploads:</strong> Your photos and PDF documents are never uploaded, transmitted, or stored on any remote server owned by OmarTeam or third parties.</li>
+                    <li><strong>Direct Hardware Transfer:</strong> Print data is transmitted directly from your phone to your printer over your local Wi-Fi router (via IPP port 631, RAW port 9100, or LPR port 515) or via a direct USB OTG cable.</li>
+                    <li><strong>Automatic Cache Cleanup:</strong> Temporary raster files created during a print job are automatically deleted from your device cache immediately after the print job finishes or is canceled.</li>
+                </ul>
+            </section>
+
+            <!-- Section 2: Permissions Used -->
+            <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center text-sm">2</span>
+                    <span>Device Permissions &amp; Why We Need Them</span>
+                </h2>
+                <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                    <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="font-semibold text-slate-900">Wi-Fi &amp; Local Network Access</div>
+                        <p class="text-slate-600 text-xs mt-1">
+                            Used exclusively to auto-discover your printer on your local Wi-Fi router (via mDNS/IPP/TCP) and stream print data directly to the printer's local IP address.
+                        </p>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="font-semibold text-slate-900">USB Host / USB OTG Permission</div>
+                        <p class="text-slate-600 text-xs mt-1">
+                            Used to communicate directly with USB printers connected to your Android phone via an OTG cable.
+                        </p>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="font-semibold text-slate-900">Foreground Service &amp; WakeLock</div>
+                        <p class="text-slate-600 text-xs mt-1">
+                            Ensures multi-page print jobs and background Android System Print Service jobs complete reliably without the OS interrupting Wi-Fi or CPU mid-page.
+                        </p>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="font-semibold text-slate-900">Notifications (Android 13+)</div>
+                        <p class="text-slate-600 text-xs mt-1">
+                            Displays real-time progress notifications while an active print job is streaming to the printer.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Device Identifier & Licensing -->
+            <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center text-sm">3</span>
+                    <span>Device Identifier, Quotas &amp; Pro Licensing</span>
+                </h2>
+                <p class="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+                    To manage your free welcome print quota and verify offline <strong>Printline Pro</strong> activation codes, the App computes a short, non-reversible 8-character hash (<code>XXXX-XXXX</code>) derived locally from your device's <code>ANDROID_ID</code> using SHA-256.
+                </p>
+                <ul class="mt-2 space-y-1.5 text-sm text-slate-600 list-disc pl-5">
+                    <li>This short identifier cannot be reversed to reveal your personal identity, phone number, or hardware serial number.</li>
+                    <li>Quota state and license status are stored locally in Android SharedPreferences and Android Auto-Backup so your Pro license and quota ledger are preserved on your device.</li>
+                </ul>
+            </section>
+
+            <!-- Section 4: Third-Party Services (AdMob & Play Billing) -->
+            <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center text-sm">4</span>
+                    <span>Third-Party Services (Google AdMob &amp; Google Play Billing)</span>
+                </h2>
+                <p class="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+                    In the free tier, Printline integrates official Google SDKs to support app development and in-app upgrades:
+                </p>
+                <ul class="mt-3 space-y-2 text-sm text-slate-600 list-disc pl-5">
+                    <li>
+                        <strong>Google AdMob (Google Mobile Ads SDK):</strong> Used to display banner, interstitial, and optional rewarded video ads in the free version. AdMob may collect and use your device's Advertising ID (<code>AD_ID</code>), coarse location/IP address, and ad interaction diagnostics in accordance with Google's privacy policy. Upgrading to <strong>Printline Pro</strong> disables all ads.
+                    </li>
+                    <li>
+                        <strong>Google Play Billing:</strong> Used to process one-time lifetime upgrades (<code>printline_pro_lifetime</code>) and restore purchases securely through Google Play. We do not access or store your credit card or banking details.
+                    </li>
+                </ul>
+                <p class="mt-3 text-xs sm:text-sm text-slate-500">
+                    Learn more about how Google handles data at:
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-medium">https://policies.google.com/privacy</a>
+                </p>
+            </section>
+
+            <!-- Section 5: Children's Privacy & Data Security -->
+            <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center text-sm">5</span>
+                    <span>Children's Privacy, Legal Disclaimer &amp; Contact</span>
+                </h2>
+                <p class="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+                    Printline does not knowingly collect personal information from children under the age of 13.
+                </p>
+                <div class="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-600">
+                    <strong>Trademark Disclaimer:</strong> Printline is an independent software utility developed by <strong>OmarTeam</strong> and is not affiliated with, endorsed, or sponsored by Canon Inc. All product and brand names are trademarks of their respective owners and are used strictly to indicate hardware compatibility.
+                </div>
+                <p class="mt-4 text-sm text-slate-700">
+                    <strong>Contact Us:</strong> If you have any questions about this Privacy Policy, please reach out via our GitHub page at
+                    <a href="https://github.com/omarb1989" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-medium">github.com/omarb1989</a>.
+                </p>
+            </section>
+        </article>
+
+        <!-- ==================== ARABIC VERSION (RTL) ==================== -->
+        <article id="contentAr" class="space-y-6 hidden lang-ar" dir="rtl">
+            <!-- Hero Summary Card -->
+            <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold mb-3 border border-blue-200">
+                    <span>🔒 متوافقة مع سياسات Google Play</span>
+                    <span>•</span>
+                    <span dir="ltr">com.omarteam.printline</span>
+                </div>
+                <h1 class="text-2xl sm:text-3xl font-bold text-slate-900">
+                    سياسة الخصوصية لتطبيق Printline
+                </h1>
+                <p class="text-sm text-slate-500 mt-1">
+                    <strong>تاريخ السريان:</strong> 29 أكتوبر 2026 &nbsp;|&nbsp; <strong>المطور:</strong> OmarTeam
+                </p>
+                <p class="mt-4 text-slate-700 leading-relaxed text-sm sm:text-base">
+                    تطبيق <strong>Printline</strong> هو أداة طباعة محلية مباشرة مطورة بواسطة <strong>OmarTeam</strong> لأجهزة أندرويد. نحن نحترم خصوصيتك بالكامل؛ ولذلك صُمم التطبيق بحيث تتم <strong>جميع عمليات معالجة الصور ومستندات PDF وتحويلها للطباعة محلياً بنسبة 100% داخل هاتفك وعبر شبكتك المحلية فقط</strong> دون رفع أي ملفات أو مستندات إلى أي خادم خارجي.
+                </p>
+            </div>
+
+            <!-- Section 1 -->
+            <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center text-sm">1</span>
+                    <span>معالجة المستندات والصور والطباعة المحلية</span>
+                </h2>
+                <p class="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+                    عند اختيار صورة أو مستند PDF أو ملف <code>.prn</code> داخل التطبيق، أو عند الطباعة من أي تطبيق آخر عبر <strong>خدمة طباعة النظام (Printline System Print Service)</strong>، تتم معالجة الملفات حصرياً داخل الذاكرة العشوائية والمؤقتة للهاتف (<code>cacheDir</code>).
+                </p>
+                <ul class="mt-3 space-y-2 text-sm text-slate-600 list-disc pr-5">
+                    <li><strong>عدم رفع الملفات للسحابة:</strong> لا يتم رفع أو إرسال أو تخزين صورك أو مستنداتك على أي خوادم خارجية تابعة لنا أو لأي طرف ثالث إطلاقاً.</li>
+                    <li><strong>إرسال مباشر للطابعة:</strong> تنتقل بيانات الطباعة مباشرة من هاتفك إلى طابعتك عبر راوتر الواي فاي المحلي (بروتوكولات IPP 631 أو RAW 9100 أو LPR 515) أو عبر كابل USB OTG مباشر.</li>
+                    <li><strong>حذف تلقائي للملفات المؤقتة:</strong> يتم حذف ملفات الطباعة المؤقتة تلقائياً وفوراً من ذاكرة التخزين المؤقت للهاتف بمجرد اكتمال مهمة الطباعة أو إلغائها.</li>
+                </ul>
+            </section>
+
+            <!-- Section 2 -->
+            <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center text-sm">2</span>
+                    <span>الأذونات التي يطلبها التطبيق وسبب استخدامها</span>
+                </h2>
+                <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                    <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="font-semibold text-slate-900">الشبكة المحلية والواي فاي (Local Network &amp; Wi-Fi)</div>
+                        <p class="text-slate-600 text-xs mt-1 leading-relaxed">
+                            تُستخدم حصرياً لاكتشاف الطابعة المتصلة بالمودم/الراوتر المحلي وإرسال حزم الطباعة إليها مباشرة.
+                        </p>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="font-semibold text-slate-900">منفذ USB OTG</div>
+                        <p class="text-slate-600 text-xs mt-1 leading-relaxed">
+                            يُستخدم للتواصل المباشر مع الطابعات الموصولة بالهاتف عبر كابل USB OTG.
+                        </p>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="font-semibold text-slate-900">الخدمة الأمامية وقفل الطاقة (Foreground Service)</div>
+                        <p class="text-slate-600 text-xs mt-1 leading-relaxed">
+                            لضمان عدم انقطاع بث صفحات الطباعة إلى الطابعة أثناء الطباعة المتعددة أو الطباعة من الخلفية.
+                        </p>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                        <div class="font-semibold text-slate-900">الإشعارات (POST_NOTIFICATIONS)</div>
+                        <p class="text-slate-600 text-xs mt-1 leading-relaxed">
+                            لعرض حالة تقدم مهمة الطباعة الجارية في شريط إشعارات النظام.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center text-sm">3</span>
+                    <span>معرف الجهاز والرصيد الترحيبي وترخيص النسخة الاحترافية</span>
+                </h2>
+                <p class="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+                    لإدارة رصيد المهام الترحيبية المجانية والتحقق من أكواد تفعيل نسخة <strong>Printline Pro</strong>، يقوم التطبيق محلياً بتوليد رمز مختصر غير قابل للعكس مكون من 8 محارف (<code>XXXX-XXXX</code>) مشتق عبر خوارزمية SHA-256 من معرف أندرويد للجهاز (<code>ANDROID_ID</code>).
+                </p>
+                <ul class="mt-2 space-y-1.5 text-sm text-slate-600 list-disc pr-5">
+                    <li>لا يكشف هذا الرمز عن هويتك الشخصية أو رقم هاتفك أو الرقم التسلسلي للعتاد.</li>
+                    <li>يُحفظ سجل الرصيد وحالة الترخيص محلياً في إعدادات التطبيق والنسخ الاحتياطي السحابي الخاص بحسابك للحفاظ على ترخيصك عند إعادة التثبيت.</li>
+                </ul>
+            </section>
+
+            <!-- Section 4 -->
+            <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center text-sm">4</span>
+                    <span>خدمات الطرف الثالث (Google AdMob و Google Play Billing)</span>
+                </h2>
+                <p class="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+                    يعتمد التطبيق في النسخة المجانية على حزم Google الرسمية التالية:
+                </p>
+                <ul class="mt-3 space-y-2 text-sm text-slate-600 list-disc pr-5">
+                    <li>
+                        <strong>إعلانات Google AdMob:</strong> تُستخدم لعرض إعلانات البانر وإعلانات المكافأة في النسخة المجانية. قد تجمع حزمة AdMob معرف الإعلانات (<code>AD_ID</code>) وبيانات تشخيص الإعلانات وفق سياسة خصوصية Google. عند الترقية إلى <strong>Printline Pro</strong> يتم إيقاف وإزالة جميع الإعلانات نهائياً.
+                    </li>
+                    <li>
+                        <strong>فوترة Google Play Billing:</strong> تُستخدم لإتمام شراء الترقية الدائمة (<code>printline_pro_lifetime</code>) واستعادة المشتريات السابقة بأمان عبر متجر Google Play دون اطلاعنا على أي بيانات مالية أو بطاقات دفع خاصة بك.
+                    </li>
+                </ul>
+                <p class="mt-3 text-xs sm:text-sm text-slate-500">
+                    للاطلاع على سياسة خصوصية Google الرسمية:
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-medium" dir="ltr">https://policies.google.com/privacy</a>
+                </p>
+            </section>
+
+            <!-- Section 5 -->
+            <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <span class="w-7 h-7 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center text-sm">5</span>
+                    <span>خصوصية الأطفال، إخلاء المسؤولية والتواصل معنا</span>
+                </h2>
+                <p class="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+                    لا يجمع تطبيق Printline أي بيانات شخصية من الأطفال دون سن 13 عاماً.
+                </p>
+                <div class="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    <strong>إخلاء مسؤولية العلامات التجارية:</strong> تطبيق Printline هو أداة برمجية مستقلة مطورة بواسطة <strong>OmarTeam</strong>، وهو غير تابع لشركة Canon Inc. ولا معتمد أو مرخص من قبلها. جميع العلامات التجارية المذكورة تُستخدم حصراً للإشارة إلى توافق الأجهزة.
+                </div>
+                <p class="mt-4 text-sm text-slate-700">
+                    <strong>للتواصل والاستفسار:</strong> في حال وجود أي استفسار حول سياسة الخصوصية، يمكنك التواصل معنا عبر صفحة المطور على GitHub:
+                    <a href="https://github.com/omarb1989" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-medium" dir="ltr">github.com/omarb1989</a>
+                </p>
+            </section>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-5 mt-8">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500" dir="ltr">
+            <span>© 2026 OmarTeam • Printline Direct Engine</span>
+            <span>Hosted on GitHub Pages • https://omarb1989.github.io/privacy-policy</span>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const btnEn = document.getElementById('btnLangEn');
+            const btnAr = document.getElementById('btnLangAr');
+            const contentEn = document.getElementById('contentEn');
+            const contentAr = document.getElementById('contentAr');
+            const headerSubtitle = document.getElementById('headerSubtitle');
+
+            function setLanguage(lang) {
+                const isAr = lang === 'ar';
+                document.documentElement.lang = isAr ? 'ar' : 'en';
+                document.documentElement.dir = isAr ? 'rtl' : 'ltr';
+
+                if (isAr) {
+                    contentEn.classList.add('hidden');
+                    contentAr.classList.remove('hidden');
+                    headerSubtitle.textContent = 'سياسة الخصوصية الرسمية • OmarTeam';
+                    btnAr.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-white text-blue-900 shadow-sm';
+                    btnEn.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-blue-100 hover:text-white';
+                } else {
+                    contentAr.classList.add('hidden');
+                    contentEn.classList.remove('hidden');
+                    headerSubtitle.textContent = 'Official Privacy Policy • OmarTeam';
+                    btnEn.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-white text-blue-900 shadow-sm';
+                    btnAr.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-blue-100 hover:text-white';
+                }
+            }
+
+            btnEn.addEventListener('click', function () { setLanguage('en'); });
+            btnAr.addEventListener('click', function () { setLanguage('ar'); });
+        })();
+    </script>
+</body>
+</html>
